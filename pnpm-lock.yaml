@@ -1,0 +1,108 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    devDependencies:
+      agentation:
+        specifier: ^3.0.2
+        version: 3.0.2
+      baseline-browser-mapping:
+        specifier: ^2.11.13
+        version: 2.11.16
+      boneyard-js:
+        specifier: ^1.9.0
+        version: 1.9.0
+
+packages:
+
+  '@chenglou/pretext@0.0.5':
+    resolution: {integrity: sha512-A8GZN10REdFGsyuiUgLV8jjPDDFMg5GmgxGWV0I3igxBOnzj+jgz2VMmVD7g+SFyoctfeqHFxbNatKSzVRWtRg==}
+
+  agentation@3.0.2:
+    resolution: {integrity: sha512-iGzBxFVTuZEIKzLY6AExSLAQH6i6SwxV4pAu7v7m3X6bInZ7qlZXAwrEqyc4+EfP4gM7z2RXBF6SF4DeH0f2lA==}
+    peerDependencies:
+      react: '>=18.0.0'
+      react-dom: '>=18.0.0'
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-dom:
+        optional: true
+
+  baseline-browser-mapping@2.11.16:
+    resolution: {integrity: sha512-H/bNPUFHewJHyCTdjn1n3Pit5+2GmWT6mmeHImPX+8MA9NA6b67jO4gYmi4jTbCJb2otq34KMZnovndDPqJwhQ==}
+    engines: {node: '>=6.0.0'}
+    hasBin: true
+
+  boneyard-js@1.9.0:
+    resolution: {integrity: sha512-FlIHm7YyQ6GMBPaNY6um5ESHNyZGONoSZ0IMhayuyemBsCUhhDl4nC/gMTOi/25ojtrlnRInTWKqFKb7hGK6Cg==}
+    hasBin: true
+    peerDependencies:
+      '@angular/core': '>=14'
+      preact: '>=10'
+      react: '>=18'
+      react-native: '>=0.71'
+      svelte: '>=5.29'
+      vite: '>=5'
+      vue: '>=3'
+    peerDependenciesMeta:
+      '@angular/core':
+        optional: true
+      preact:
+        optional: true
+      react:
+        optional: true
+      react-native:
+        optional: true
+      svelte:
+        optional: true
+      vite:
+        optional: true
+      vue:
+        optional: true
+
+  fsevents@2.3.2:
+    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
+    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
+    os: [darwin]
+
+  playwright-core@1.62.1:
+    resolution: {integrity: sha512-wPYSwEBJY9GHraISXqyqtx0na0LpO3XEX7jNDhntbex7tzUS7kLnZsOlFruFJB4Hi/rhDMjXGqHewDZ68nYZVw==}
+    engines: {node: '>=20'}
+    hasBin: true
+
+  playwright@1.62.1:
+    resolution: {integrity: sha512-0M+L3LAD8/nm554LOla9Ayx0j0tmFZ0FBcoQ7F1VuVHpM/XpiC8RcDzBQB8W5+hA8L22THxELzeF+2WcUzvcLg==}
+    engines: {node: '>=20'}
+    hasBin: true
+
+snapshots:
+
+  '@chenglou/pretext@0.0.5':
+    optional: true
+
+  agentation@3.0.2: {}
+
+  baseline-browser-mapping@2.11.16: {}
+
+  boneyard-js@1.9.0:
+    dependencies:
+      playwright: 1.62.1
+    optionalDependencies:
+      '@chenglou/pretext': 0.0.5
+
+  fsevents@2.3.2:
+    optional: true
+
+  playwright-core@1.62.1: {}
+
+  playwright@1.62.1:
+    dependencies:
+      playwright-core: 1.62.1
+    optionalDependencies:
+      fsevents: 2.3.2

@@ -1,0 +1,74 @@
+# Environments & Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+build/
+dist/
+*.egg-info/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.pyright/
+.ruff_cache/
+
+# Runtime Staging & Processing Data (User Data Stays Local)
+stage_input/
+stage_output/
+stage_mask/
+processed_images/
+backup_images/
+input_images/
+cleaned_images/
+backend/temp/
+
+# Debug & Benchmark Artifacts (generated, not canonical)
+debug/
+debug_*/
+test_bulk_output/
+test_bulk_input/
+scratch/
+artifacts/
+tmp/
+temp/
+logs/
+
+# Temporary Files & Generated Artifacts
+mask.png
+test_mask.jpeg
+test_inpainted.jpeg
+debug_mask_*.png
+*.log
+
+# Node / Frontend
+node_modules/
+.next/
+
+# Environment Variables & Secrets
+.env
+.env.local
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# OS
+.DS_Store
+
+# NOTE: backend/core/gemini_alpha.npy IS a canonical runtime asset
+# required for the deterministic Gemini watermark removal pipeline.
+# It MUST remain tracked in git and MUST NOT be added here.
+
+venv/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+__pycache__/
